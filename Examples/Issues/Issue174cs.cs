@@ -15,7 +15,7 @@ namespace Examples.Issues
         [Test]
         public void TestDynamic()
         {
-            Program.ExpectFailure<Exception>(() =>
+            Program.ExpectFailure<InvalidOperationException>(() =>
             {
                 var myVal = new TestProto { Value = true };
                 byte[] serialized;
